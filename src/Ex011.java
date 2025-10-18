@@ -1,19 +1,18 @@
-class CMYKtoRGB {
+public class Ex011 {
     public static void main(String[] args) {
 
-        double c = Double.parseDouble(args[0]);
-        double m = Double.parseDouble(args[1]);
-        double y = Double.parseDouble(args[2]);
-        double k = Double.parseDouble(args[3]);
+        long a = Long.parseLong(args[0]);
+        long b = Long.parseLong(args[1]);
+        long c = Long.parseLong(args[2]);
 
-        double white = 1 - k;
+        boolean positivos = (a > 0) && (b > 0) && (c > 0);
 
-        int r = (int) Math.round(255 * white * (1 - c));
-        int g = (int) Math.round(255 * white * (1 - m));
-        int b = (int) Math.round(255 * white * (1 - y));
+        boolean pitagoras = (a*a + b*b == c*c) ||
+                (a*a + c*c == b*b) ||
+                (b*b + c*c == a*a);
 
-        System.out.println("Red = " + r);
-        System.out.println("Green = " + g);
-        System.out.println("Blue = " + b);
+        boolean eTrianguloRetangulo = positivos && pitagoras;
+
+        System.out.println(eTrianguloRetangulo);
     }
 }

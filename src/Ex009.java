@@ -1,18 +1,14 @@
-class RightTriangle {
+public class Ex009 {
     public static void main(String[] args) {
+        String name1 = args[0];
+        String name2 = args[1];
+        String name3 = args[2];
+        String name4 = args[3];
 
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
-        int c = Integer.parseInt(args[2]);
+        System.out.println("Hello " + name1 + " and " + name2 + ".");
+        System.out.println("Goodbye " + name2 + " and " + name1 + ".");
 
-        boolean positivos = (a > 0) && (b > 0) && (c > 0);
-
-        boolean pitagoras = (a*a + b*b == c*c) ||
-                (a*a + c*c == b*b) ||
-                (b*b + c*c == a*a);
-
-        boolean eTrianguloRetangulo = positivos && pitagoras;
-
-        System.out.println(eTrianguloRetangulo);
+        System.out.println("Hello " + name3 + " and " + name4 + ".");
+        System.out.println("Goodbye " + name4 + " and " + name3 + ".");
     }
 }
