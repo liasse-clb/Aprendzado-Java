@@ -14,9 +14,7 @@ apenas 10 vezes */
 
 class PowersOfTwo {
     public static void main(String[] args) {
-
         int n = 5;
-
         int i = 0;
         int powerOfTwo = 1;
 
@@ -28,4 +26,5 @@ class PowersOfTwo {
 
     }
 }
-//recebe um argumento de linha de comando inteiro n e imprime todas as potências de 2 menores ou iguais a n 
+
+//recebe um argumento de linha de comando inteiro n e imprime todas as potências de 2 menores ou iguais a n
